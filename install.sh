@@ -4,7 +4,7 @@
 #   System Required: CentOS 7+ / Debian 8+ / Ubuntu 16+ /
 #     Arch 未测试
 #   Description: nezha_api_tgbot安装脚本
-#   Github: https://github.com/spiritLHLS/nezha_api_tgbot
+#   Github: https://github.com/bunianguowang/nezha_api_tgbot
 #========================================================
 
 #========================================================
@@ -33,9 +33,9 @@ pre_check() {
     # check root
     [[ $EUID -ne 0 ]] && echo -e "${red}错误: ${plain} 必须使用root用户运行此脚本！\n" && exit 1
 
-    GITHUB_RAW_URL="raw.githubusercontent.com/spiritLHLS/nezha_api_tgbot/master"
+    GITHUB_RAW_URL="raw.githubusercontent.com/bunianguowang/nezha_api_tgbot/master"
     Get_Docker_URL="get.docker.com"
-    Docker_IMG="ghcr.io/spiritlhls/nezhaapitgbot"
+    Docker_IMG="ghcr.io/bunianguowang/nezhaapitgbot"
 }
 
 confirm() {
